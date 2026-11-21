@@ -20,7 +20,7 @@
 #### step 1
 Download model weights from huggingface
 ```bash
-git clone https://huggingface.co/lileica/GEO-SeqGuider localModel
+git clone https://huggingface.co/XXX/XXX Model
 ```
 
 #### step 2
