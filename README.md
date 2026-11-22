@@ -45,14 +45,14 @@ python BS168.py --model_dir=./results_new/results_RNA --mode=generate --target_b
 If you use the code or data in this package, please cite:
 
 ```bibtex
-@Article{XXX,
+@Article{BS1682026,
   author  = {XXX,XXX,XXX},
-  journal = {CNS},
-  title   = {XXXXXXXXXXX},
+  journal = {XXX},
+  title   = {Deep learning-guided programmable design of Bacillus subtilis promoters with prescribed strength},
   year    = {2026},
-  volume  = {14},
-  URL={https://www.XXXX},       
-	DOI={XXX.2026.XXX},      
+  volume  = {XX},
+  URL={https://doi.org/10.XXXX/XXXXX},       
+	DOI={10.XXXX/XXXXX},      
 	ISSN={XXXX-XXXX}
 }
 ```
