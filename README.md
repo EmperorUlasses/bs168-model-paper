@@ -4,8 +4,8 @@
 
 ## Important links:  
 - [Paper:XXXX](https://arxiv.org/abs/XXXXXXX)
-- [Huggingface: model weights](https://huggingface.co/lileica/GEO-SeqGuider)
-- [Dataset: The GEO-SeqGuider model is trained in two stages: genome pre training and specific task fine-tuning, based on the dataset ]( https://doi.org/XXXX/zenodo.XXX)
+- [Huggingface: model weights](https://huggingface.co/zhihan1996/DNABERT-2-117M)
+- [Dataset: The BS168 model is trained in two stages: regression prediction fine‑tuning and conditional diffusion generation, based on 9,964 experimentally measured *Bacillus subtilis* promoter sequences ]( https://doi.org/XXXX/zenodo.XXX)
 
 ## Installation with conda
 ```bash
@@ -20,7 +20,7 @@
 #### step 1
 Download model weights from huggingface
 ```bash
-git clone https://huggingface.co/XXX/XXX Model
+git clone [https://huggingface.co/XXX/XXX](https://huggingface.co/zhihan1996/DNABERT-2-117M) Model
 ```
 
 #### step 2
