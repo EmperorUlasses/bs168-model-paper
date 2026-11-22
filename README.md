@@ -9,9 +9,12 @@
 
 ## Installation with conda
 ```bash
-    conda env create -f requirements.yml
-    conda activate GEOSeqGuiderEnv
-```
+# create conda python environment
+conda create -n BS168Env python=3.11 -y
+conda activate BS168Env
+
+# install dependencies from requirements.txt
+pip install -r requirements.txt
 
 ## Applications
 
@@ -23,11 +26,13 @@ Download model weights from huggingface
 git clone https://huggingface.co/zhihan1996/DNABERT-2-117M Model
 ```
 
-#### step 2
+#### step 2‑1 Predict promoter strength from input DNA sequence
 Predict with local model weights
 ```bash
     python GEOSeqGuider.py --model=localModel/foldx --promoter="XXXX" --sgRNA='XXXX' --pam='XXXX' --out_dir='XXXX'
 ```
+
+#### step 2‑2 Conditional generation of promoters with target strength
 
 
 # Citing this work
