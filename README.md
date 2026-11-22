@@ -15,6 +15,7 @@ conda activate BS168Env
 
 # install dependencies from requirements.txt
 pip install -r requirements.txt
+```
 
 ## Applications
 
@@ -27,12 +28,16 @@ git clone https://huggingface.co/zhihan1996/DNABERT-2-117M Model
 ```
 
 #### step 2‑1 Predict promoter strength from input DNA sequence
-Predict with local model weights
+Predict promoter strength using local GSR‑DNABERT‑2 weights
 ```bash
-    python GEOSeqGuider.py --model=localModel/foldx --promoter="XXXX" --sgRNA='XXXX' --pam='XXXX' --out_dir='XXXX'
+python BS168.py --model_dir=./results_new/results_RNA --mode=predict --promoter_seq="XXXX" --out_dir='./output'
 ```
 
 #### step 2‑2 Conditional generation of promoters with target strength
+Generate de‑novo 95‑bp promoters for given target strength bin
+```bash
+python BS168.py --model_dir=./results_new/results_RNA --mode=generate --target_bin=3 --frame=0 --out_dir='./output'
+```
 
 
 # Citing this work
